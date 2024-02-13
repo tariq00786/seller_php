@@ -1,0 +1,198 @@
+.header {
+
+	background: none;
+
+	.app-btn {
+
+		color: $text-primary !important;
+
+	}
+
+	.fill-btn {
+
+		color: $bg-primary !important;
+
+	}
+}
+
+.logo {
+
+	svg {
+
+		fill: $bg-primary !important;
+	}
+
+	.logo-text {
+
+		color: $bg-primary;
+
+
+	}
+
+
+}
+
+.header.header-scrolled {
+	width: 98%;
+	top: $app-space_half;
+	border-radius: $btn-round;
+	margin: 0 auto;
+	.mobile-nav-toggle {
+		color: $primary;
+
+	}
+
+	.logo {
+
+		svg {
+
+			fill: $primary !important;
+		}
+
+		.logo-text {
+
+			color: $text-primary;
+
+
+		}
+
+
+	}
+
+	.navbar {
+
+		li {
+			position: relative;
+
+			&:hover {
+				>a {
+
+					color: $primary;
+				}
+			}
+		}
+
+		a {
+
+			color: $text-primary;
+
+
+		}
+
+		.active {
+			color: $primary;
+
+			&:focus {
+				color: $primary;
+			}
+		}
+
+	}
+}
+
+.navbar {
+	padding: 0;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		list-style: none;
+		align-items: center;
+	}
+
+	li {
+		position: relative;
+
+		&:hover {
+			>a {
+
+				color: $primary;
+			}
+		}
+	}
+
+	a {
+
+		color: $bg-primary;
+
+		&:focus {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: $app-space_half 0 $app-space_half 30px;
+			font-family: "Nunito", sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+			color: $primary-dark;
+			white-space: nowrap;
+			transition: 0.3s;
+
+			i {
+				font-size: 12px;
+				line-height: 0;
+				margin-left: 5px;
+			}
+		}
+
+		i {
+			font-size: 12px;
+			line-height: 0;
+			margin-left: 5px;
+		}
+
+		&:hover {
+			color: $primary;
+		}
+	}
+
+	.active {
+		color: $primary;
+
+		&:focus {
+			color: $primary;
+		}
+	}
+
+}
+
+.mobile-nav-toggle {
+	color: $bg-primary;
+
+}
+
+.mobile-nav-toggle.bi-x {
+	color: $bg-primary;
+}
+
+@media (max-width: 1200px) {
+	.mobile-nav-toggle {
+		display: block;
+
+	}
+
+	.navbar {
+		ul {
+			display: none;
+		}
+
+		.dropdown ul .dropdown-inner {
+			box-shadow: none !important;
+			height: auto;
+			background: #ffffff;
+			padding: 20px;
+		}
+
+		.megamenu {
+			position: static;
+
+			.grid-list {
+
+				grid-template-columns: 100%;
+
+			}
+
+			ul {}
+		}
+	}
+}

@@ -1,0 +1,112 @@
+.slider-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel {
+    position: relative;
+    
+  
+      @keyframes slideAnimation {
+        0% {
+          transform: scale(0.0);
+        }
+        100% {
+          transform: scale(0.8);
+        }
+      }
+    .btn-wraper {
+        position: absolute;
+        right: 0;
+        top:100px;
+        z-index: 999;
+    }
+  }
+  .hero {
+    width: 100%;
+    height: $hero-main;
+    max-height: 600px;
+    background: url(../img/hero-bg.png) top center no-repeat;
+    background-size: cover;
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size:24px;
+    }
+    h4 {
+      max-width: 500px;
+    }
+    .control-btn {
+      position: relative;
+      background:$primary;
+      padding: $app-space;
+      color: $bg-primary;
+      border-radius: $btn-round;
+  }
+}
+.page-header {
+  padding:$app-space2x 0;
+  height:$inner-hero-main;
+  overflow: hidden;
+  max-height: 300px;
+  
+  }
+  .hero-text {
+    text-align: center;
+    h1.heading {
+        font-size: 32px;
+        color: $text-primary;
+    }
+    h2.text {
+        font-size: 24px;
+        color: $text-secondary;
+    }
+    .hero-img {
+        img {
+            width: 100%;
+        }
+    }
+}
+  @media (max-width: 768px) {
+    .page-header {
+  height: auto;
+      
+      }
+	.hero {
+		text-align: center;
+    height: auto;
+    max-height: inherit;
+    
+		h1 {
+			font-size: 24px;
+		}
+		h2 {
+			font-size: 18px;
+		}
+		.hero-img {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+}
+@media (min-width: 1024px) {
+	.hero {
+		background-attachment: fixed;
+	}
+}
+@media (max-width: 991px) {
+	.hero {
+	
+
+		.hero-img {
+			text-align: center;
+			margin-top: 20px;
+			img {
+				width: 80%;
+			}
+		}
+	}
+}

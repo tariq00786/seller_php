@@ -1,0 +1,39 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,500,600';
+//colors
+$bg-primary: #ffffff;
+$text-primary: #0C141B;
+$text-secondary: #405261;
+$default: #808080;
+$light: #eeeeee;
+$light-off: #f2f2f2;
+//states
+$primary-light: #e6f4ff;
+$primary: #118CE4;
+$highlight:#7814D4;
+$primary-dark: #034077;
+$success: #00DA28;
+$warning: #FFDD00;
+$danger: #FF2606;
+
+
+
+
+//spacing
+$app-space_half : 10px;
+$app-space : 20px;
+$app-space2x : 40px;
+//border
+$card-round: 20px;
+$btn-round: 10px;
+
+//shadow
+$dark-shadow :0px 0px 10px rgba(0, 0, 0, 0.2);
+$light-shadow :0px 0px 10px rgba(255, 255, 255, 0.2);
+//sizes
+$icon-lg: 24px;
+$icon-sm: 14px;
+$header-size: 82px;
+$hero-main:100vh;
+$hero-mobile:auto;
+$inner-hero-main:300px;
+$body-size:14px;

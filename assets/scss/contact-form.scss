@@ -1,0 +1,98 @@
+.contact {
+	.info-box {
+		color: $text-primary;
+		background: $primary-light;
+		padding: 30px;
+		border-radius: $card-round;
+		i {
+			font-size: 38px;
+			line-height: 0;
+			color: $primary;
+		}
+		h3 {
+			font-size: 20px;
+			color: $primary-dark;
+			font-weight: 700;
+			margin: $app-space 0 $app-space_half 0;
+		}
+		p {
+			padding: 0;
+			line-height: 24px;
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+	}
+	.php-email-form {
+		background: $primary-light;
+		border-radius: $card-round;
+		padding: 30px;
+		height: 100%;
+	}
+		.error-message {
+			display: none;
+			color: $bg-primary;
+			background: $warning;
+			text-align: left;
+			padding: 15px;
+			margin-bottom: 24px;
+			font-weight: 600;
+		}
+		.sent-message {
+			display: none;
+			color: $bg-primary;
+			background: $success;
+			text-align: center;
+			padding: 15px;
+			margin-bottom: 24px;
+			font-weight: 600;
+		}
+		.loading {
+			display: none;
+			background: $bg-primary;
+			text-align: center;
+			padding: 15px;
+			margin-bottom: 24px;
+			&:before {
+				content: "";
+				display: inline-block;
+				border-radius: 50%;
+				width: 24px;
+				height: 24px;
+				margin: 0 $app-space_half -6px 0;
+				border: 3px solid $success;
+				border-top-color: #eee;
+				animation: animate-loading 1s linear infinite;
+			}
+		}
+		input, textarea {
+			border-radius: $btn-round !important;
+			margin-bottom: $app-space;
+		}
+		input {
+			border-radius: 0;
+			box-shadow: none;
+			font-size: 14px;
+			border-radius: 0;
+			&:focus {
+				border-color: $primary;
+			}
+		}
+		textarea {
+			border-radius: 0;
+			box-shadow: none;
+			font-size: 14px;
+			border-radius: 0;
+			padding: 12px 15px;
+			&:focus {
+				border-color: $primary;
+			}
+		}
+		input[type=text] {
+			padding: $app-space_half 15px;
+		}
+		input[type=email] {
+			padding: $app-space_half 15px;
+		}
+	
+	
+}

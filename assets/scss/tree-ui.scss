@@ -1,0 +1,124 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"); 
+
+section.even-section {
+    &:nth-child(even) {
+background: rgba($color: $light, $alpha: 0.4);
+      
+    }
+}
+.tree-ui {
+    $tree-border:5px;
+$tree-color:$light;
+    .tree-topic {
+        width: 160px;
+        height: 160px;
+        border: $tree-border solid $tree-color;
+        border-radius: 50%;
+        background: $bg-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    .section-header {
+        padding-bottom: $app-space_half;
+        z-index: 9;
+        h2 {
+            font-size: 18px;
+         
+          
+          
+            max-width: 270px;
+        }
+    
+
+    }
+    ul {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding-top: $app-space2x;
+        padding: 0;
+        position: relative;
+      
+       li {
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        position: relative;
+        min-height: 100px;
+        gap: 30%;
+        margin-bottom: $app-space;
+        
+  
+     
+        .tree-text {
+            background: $light;
+            color: $text-secondary;
+            font-size: 14px;
+            padding: $app-space;
+            padding-left: $app-space2x;
+            width: 100%;
+          max-width: 500px;
+            z-index: 3;
+            border-radius: $card-round;
+            transition: 0.4s;
+            position: relative;
+            .icon {
+                background: $bg-primary;
+                width: 60px;
+                height: 60px;
+                border:$tree-border solid $tree-color;
+                border-radius: 50%;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                margin-top: -30px;
+left: -20px;
+                z-index: 99;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.4s;
+                color: $primary;
+                font-size: 30px;
+            }
+        }
+        &:nth-child(even) {
+flex-direction: row-reverse;
+.tree-text {
+
+ 
+    .icon {
+  left: inherit;
+right: -20px;
+       
+    }
+}
+        }
+        &:hover {
+            &::after {
+                background: $primary;
+            }
+            .icon {
+              
+                border:$tree-border solid $primary;
+                background: $primary-light;
+                
+                
+            }
+            .tree-text {
+                background: $primary;
+                color: $bg-primary;
+             
+                
+            }
+
+        }
+       }
+     
+    }
+}

@@ -1,0 +1,257 @@
+.features {
+	.feature-box {
+		padding: 24px $app-space;
+		box-shadow: $dark-shadow;
+		transition: 0.3s;
+		height: 100%;
+
+		h3 {
+			font-size: 18px;
+			color: $primary-dark;
+			font-weight: 700;
+			margin: 0;
+		}
+
+		i {
+			line-height: 0;
+			background: #ecf3ff;
+			padding: 4px;
+			margin-right: $app-space_half;
+			font-size: 24px;
+			border-radius: 3px;
+			transition: 0.3s;
+		}
+
+		&:hover {
+			i {
+				background: $primary;
+				color: $bg-primary;
+			}
+		}
+	}
+
+	.feture-tabs {
+		margin-top: 120px;
+
+		h3 {
+			color: $primary-dark;
+			font-weight: 700;
+			font-size: 32px;
+			margin-bottom: $app-space_half;
+		}
+
+		.nav-pills {
+			border-bottom: 1px solid #eee;
+			justify-content: center;
+		}
+
+		.nav-link {
+			background: none;
+			text-transform: uppercase;
+			font-size: 15px;
+			font-weight: 600;
+			color: $primary-dark;
+			padding: 12px 0;
+			margin-right: 25px;
+			margin-bottom: -2px;
+			border-radius: 0;
+		}
+
+		.nav-link.active {
+			color: $primary;
+			border-bottom: 3px solid $primary;
+		}
+
+		.tab-content {
+			h4 {
+				font-size: 18px;
+				margin: 0;
+				font-weight: 700;
+				color: $primary-dark;
+			}
+
+			i {
+				font-size: 24px;
+				line-height: 0;
+				margin-right: 8px;
+				color: $primary;
+			}
+		}
+	}
+
+
+}
+
+.feature-list {
+	padding: 0;
+
+	li {
+		list-style: none;
+		margin-bottom: $app-space;
+		display: flex;
+		gap: $app-space;
+	}
+
+	i {
+		color: $primary;
+		font-size: 24px !important;
+	}
+}
+
+.feature-links {
+	position: static;
+	.grid-list {
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: auto auto auto;
+
+	}
+	ul {
+		margin-top: 0;
+		right: 0;
+		padding: 0;
+		.link-item {
+			display: grid;
+				grid-template-columns: 100%;
+				margin-bottom: $app-space;
+				justify-content: center;
+				color: $primary-dark;
+				text-align: center;
+				font-weight: normal;
+				justify-content: flex-start;
+				padding: $app-space2x;
+				transition: 0.4s;
+		}
+		li {
+
+			list-style: none;
+			p {
+				clear: both;
+				color: $text-secondary;
+				margin-bottom: 0;
+				margin-top: 5px;
+				width: 100%;
+				@include p-3line;
+				line-height: 18px !important;
+				font-size: 12px !important;
+				height: 53px !important;
+				color: $default !important;
+			}
+span {
+	margin-top: $app-space;
+	text-transform: uppercase;
+	font-size: 16px !important;
+}
+			i {
+				color: $primary;
+				margin-right: $app-space_half;
+				font-size: 40px;
+				margin: 0 auto;
+			}
+			.link-item {
+				display: grid;
+				grid-template-columns: 100%;
+				margin-bottom: $app-space;
+				justify-content: center;
+				color: $primary-dark;
+				text-align: center;
+				font-weight: normal;
+				justify-content: flex-start;
+				padding: $app-space2x;
+				transition: 0.4s;
+				cursor: pointer;
+				
+
+				span {
+					font-size: 14px;
+					font-weight: bold !important;
+				}
+
+				&:hover {
+					background-color: $primary-light;
+				
+				}
+
+			}
+			a {
+				display: grid;
+				grid-template-columns: 100%;
+				margin-bottom: $app-space;
+				justify-content: center;
+				color: $primary-dark;
+				text-align: center;
+				font-weight: normal;
+				justify-content: flex-start;
+				padding: $app-space2x;
+				transition: 0.4s;
+				
+
+				span {
+					font-size: 14px;
+					font-weight: bold !important;
+				}
+
+				&:hover {
+					background-color: $primary-light;
+				
+				}
+
+			}
+			.card {
+				box-shadow: $dark-shadow;
+				background-color: $bg-primary;
+				border-radius: $btn-round;
+			}
+
+			&:hover {
+				>a {
+					color: $primary-dark;
+				}
+			}
+
+			.active {
+				color: $primary;
+
+				&:hover {
+					color: $primary;
+				}
+			}
+
+			&:nth-child(5n+1) {
+				i {
+					color: $success;
+
+				}
+			}
+
+			&:nth-child(5n+2) {
+				i {
+					color: $warning;
+
+				}
+			}
+
+			&:nth-child(5n+3) {
+				i {
+					color: $danger;
+
+				}
+			}
+
+			&:nth-child(5n+4) {
+				i {
+					color: $success;
+
+				}
+			}
+
+			&:nth-child(5n+5) {
+				i {
+					color: $highlight;
+
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,45 @@
+
+
+
+  .hero {
+    
+    background-color: #0a0b0d;
+    color: $bg-primary;
+   
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+  
+    .control-btn {
+      position: relative;
+      background:$bg-primary;
+      padding: $app-space;
+      color: $primary;
+      border-radius: $btn-round;
+  }
+}
+.page-header {
+  padding:$app-space2x 0;
+  height:$inner-hero-main;
+  overflow: hidden;
+  max-height: 300px;
+  
+  }
+  .hero-text {
+    text-align: center;
+    h1.heading {
+        font-size: 32px;
+       
+    }
+    h2.text {
+        font-size: 24px;
+      
+    }
+    .hero-img {
+        img {
+            width: 100%;
+        }
+    }
+}
+

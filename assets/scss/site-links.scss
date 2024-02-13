@@ -1,0 +1,48 @@
+.site-links {
+    margin-bottom: 30px;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        i {
+            padding-right: 2px;
+            color: $primary;
+            font-size: 12px;
+            line-height: 0;
+        }
+        li {
+            padding:0 0 $app-space_half 0;
+            display: flex;
+            gap: $app-space_half;
+            align-items: center;
+            color: $text-secondary;
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+        a {
+            color: $text-secondary;
+            transition: 0.3s;
+            display: inline-block;
+            line-height: 1;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+.footer-links {
+    ul {
+        li {
+            
+        }
+      
+        i {
+        
+            color: $text-secondary;
+            font-size: 12px;
+           
+        }
+     
+    }
+}

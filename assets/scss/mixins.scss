@@ -1,0 +1,57 @@
+@mixin p-4line {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 14px ;
+    height: 93px ;
+    line-height: 24px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+  @mixin p-3line {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 14px !important;
+    height: 73px !important;
+    line-height: 24px !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+  @mixin p-2line {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 14px !important;
+    height: 53px !important;
+    line-height: 24px !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+  @mixin p-1line {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 14px !important;
+    height: 28px !important;
+    line-height: 24px !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+  

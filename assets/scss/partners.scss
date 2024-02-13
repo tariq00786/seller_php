@@ -1,0 +1,24 @@
+.partners {
+    display: flex;
+    width: 100%;
+    background-color: $bg-primary;
+    height: auto;
+    gap: $app-space_half;
+    align-items: center;
+    justify-content: center;
+    margin: $app-space 0;
+
+    padding: $app-space 0;
+
+    .item {
+        width: 100%;
+        max-width: 100px;
+        opacity: 1;
+        transition: 0.2s;
+       img {
+        width: 100%;
+    border-radius: $btn-round; 
+box-shadow: $dark-shadow;      }
+    }
+   
+}

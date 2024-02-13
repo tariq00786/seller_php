@@ -1,0 +1,50 @@
+.breadcrumbs {
+	padding: $app-space_half 0;
+	background: $primary-dark;
+	min-height: 40px;
+	margin-top: 82px;
+	color: $bg-primary;
+    box-shadow: inset -1px 4px 13px #282d5a;;
+	h2 {
+		font-size: 28px;
+		font-weight: 500;
+		text-transform: capitalize;
+	}
+	ol {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0 ;
+		margin: 0;
+		font-size: 14px;
+		a {
+			color: $bg-primary;
+			transition: 0.3s;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		li+li {
+			padding-left: $app-space_half;
+			text-transform: capitalize;
+			&::before {
+				display: inline-block;
+				padding-right: $app-space_half;
+				color: #8894f6;
+				content: "/";
+			}
+		}
+	}
+}
+@media (max-width: 992px) {
+	.breadcrumbs {
+		margin-top: $header-size;
+		h2 {
+			font-size: 18px;
+		}
+		ol {
+			font-size: 12px;
+		}
+	}
+
+}
